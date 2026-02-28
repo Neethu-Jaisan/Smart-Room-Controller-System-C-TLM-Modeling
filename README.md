@@ -44,7 +44,7 @@ Decision Priority:
 
 Example output from randomized testbench:
 
-![Simulation Results](systemc_fan(1).png)
+![Simulation Results](systemc_fan.png)
 
 The output shows:
 - Sensor values
