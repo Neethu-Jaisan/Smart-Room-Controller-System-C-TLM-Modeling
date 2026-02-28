@@ -1,1 +1,0 @@
-# Smart-Room-Controller-System-C-TLM-Modeling
