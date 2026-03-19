@@ -29,18 +29,6 @@ Smart Room Controller (Target / Peripheral)
 Fan + Light + Display Logic
 ```
 
-### Key Components
-
-* **Processor (Testbench)**
-  Acts as an APB master generating read/write transactions.
-
-* **Interconnect**
-  Performs address decoding and routes transactions to the peripheral.
-
-* **Smart Room Controller**
-  Implements control logic and acts as a memory-mapped peripheral.
-
----
 
 ## Memory Map (APB-Style)
 
@@ -74,18 +62,6 @@ Fan + Light + Display Logic
 * High temperature → Cool mode
 * Comfortable environment → Warm mode
 
----
-
-## Communication Model
-
-* **Protocol Type:** TLM-2.0 (Generic Payload)
-* **Communication Style:** Blocking transport (`b_transport`)
-* **Abstraction:** Memory-mapped APB-like interface
-
-Transactions include:
-
-* Write operations → Sensor inputs
-* Read operations → System outputs
 
 ---
 
@@ -105,26 +81,6 @@ Transactions include:
 Example output from randomized testbench:
 <img width="394" height="642" alt="image" src="https://github.com/user-attachments/assets/b8720538-b172-4971-8608-2f4a768e7875" />
 
-## Key Concepts Demonstrated
-
-* Transaction-Level Modeling (TLM-2.0)
-* Initiator–Target communication
-* Memory-mapped system design
-* APB-like protocol abstraction
-* Interconnect-based architecture
-* System-level design (ESL)
-* Modular design (Processor + Interconnect + Peripheral)
-
----
-
-## Design Highlights
-
-* Clean separation of **processor, interconnect, and peripheral**
-* Scalable architecture (can extend to multiple peripherals)
-* Realistic **SoC-style modeling**
-* User-friendly output for easy validation
-* Timing-aware transactions using SystemC delays
-
 ---
 
 ## Limitations
@@ -142,9 +98,4 @@ Example output from randomized testbench:
 * Integrate simple RISC-V core (optional)
 * Add real APB protocol signals
 * Extend to RTL implementation
-
----
-
-## Conclusion
-
-This project demonstrates how a **smart environment control system** can be modeled using **SystemC TLM** with a **SoC-oriented architecture**. It highlights the benefits of ESL design in validating system behavior early, before moving to detailed hardware implementation.
+----
