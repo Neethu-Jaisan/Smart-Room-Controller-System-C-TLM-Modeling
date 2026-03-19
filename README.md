@@ -83,19 +83,3 @@ Example output from randomized testbench:
 
 ---
 
-## Limitations
-
-* Uses abstracted protocol (not cycle-accurate APB)
-* Processor is functionally modeled (not RTL CPU)
-* Single peripheral (can be extended)
-
----
-
-## Future Enhancements
-
-* Add multiple peripherals (HVAC, display, sensors)
-* Introduce non-blocking transport (`nb_transport`)
-* Integrate simple RISC-V core (optional)
-* Add real APB protocol signals
-* Extend to RTL implementation
-----
