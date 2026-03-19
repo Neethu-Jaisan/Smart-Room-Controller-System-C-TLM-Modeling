@@ -1,0 +1,97 @@
+[2026-03-19 05:21:09 UTC] g++ -o sim -std=c++14 -lsystemc *.cpp  && echo "Compile done. Starting run..." && ./sim  
+Compile done. Starting run...
+
+        SystemC 2.3.3-Accellera --- May 23 2020 14:33:56
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+
+=========== SMART ROOM CYCLE ===========
+INPUT:
+ Temp      : 33 °C
+ Humidity  : 50 %
+ Occupancy : Absent
+
+PROCESS:
+ Rule Engine Activated
+
+OUTPUT:
+ Fan       : OFF
+ Light     : OFF
+ Mode      : Cool
+========================================
+
+Processor Observation:
+ Fan   : 0 | Light: 0 | Mode: Cool
+
+=========== SMART ROOM CYCLE ===========
+INPUT:
+ Temp      : 20 °C
+ Humidity  : 62 %
+ Occupancy : Present
+
+PROCESS:
+ Rule Engine Activated
+
+OUTPUT:
+ Fan       : LOW
+ Light     : ON
+ Mode      : Warm
+========================================
+
+Processor Observation:
+ Fan   : 1 | Light: 1 | Mode: Warm
+
+=========== SMART ROOM CYCLE ===========
+INPUT:
+ Temp      : 30 °C
+ Humidity  : 50 %
+ Occupancy : Absent
+
+PROCESS:
+ Rule Engine Activated
+
+OUTPUT:
+ Fan       : OFF
+ Light     : OFF
+ Mode      : Cool
+========================================
+
+Processor Observation:
+ Fan   : 0 | Light: 0 | Mode: Cool
+
+=========== SMART ROOM CYCLE ===========
+INPUT:
+ Temp      : 25 °C
+ Humidity  : 46 %
+ Occupancy : Absent
+
+PROCESS:
+ Rule Engine Activated
+
+OUTPUT:
+ Fan       : OFF
+ Light     : OFF
+ Mode      : Warm
+========================================
+
+Processor Observation:
+ Fan   : 0 | Light: 0 | Mode: Warm
+
+=========== SMART ROOM CYCLE ===========
+INPUT:
+ Temp      : 30 °C
+ Humidity  : 54 %
+ Occupancy : Present
+
+PROCESS:
+ Rule Engine Activated
+
+OUTPUT:
+ Fan       : HIGH
+ Light     : ON
+ Mode      : Cool
+========================================
+
+Processor Observation:
+ Fan   : 3 | Light: 1 | Mode: Cool
+Done
